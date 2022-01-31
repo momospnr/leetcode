@@ -6,7 +6,7 @@
 
 // @lc code=start
 function getConcatenation(nums: number[]): number[] {
-
+  return nums.concat(nums);
 };
 // @lc code=end
 
