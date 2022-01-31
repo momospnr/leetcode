@@ -6,7 +6,13 @@
 
 // @lc code=start
 function runningSum(nums: number[]): number[] {
-
+  const ans: number[] = [nums[0]];
+  nums.reduce((prev: number, cur: number) => {
+    const next = prev + cur;
+    ans.push(next);
+    return next;
+  });
+  return ans;
 };
 // @lc code=end
 
