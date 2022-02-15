@@ -6,6 +6,7 @@
 
 // @lc code=start
 function defangIPaddr(address: string): string {
+  return address.replace(/\./g, "[.]");
 
 };
 // @lc code=end
