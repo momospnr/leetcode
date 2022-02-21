@@ -6,7 +6,9 @@
 
 // @lc code=start
 function minPartitions(n: string): number {
-
+  const arr = n.split('').map((num: string) => Number(num));
+  const max = Math.max(...arr);
+  return max;
 };
 // @lc code=end
 
